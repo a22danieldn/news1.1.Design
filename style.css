@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,700|Poppins:300,200');
+
+/* SPA: Con este @import importamos la fuente/tipo de letra de Google
+con el @import ya podemos usar los tipos de letra 'Poppins' y 'Lora' */
+/* ENG: With this @import we import the Google font/typeface
+with the @import we can now use the fonts 'Poppins' and 'Lora'. */
+
+/* 
+
+SPA: Sobre el ejercicio: A través de una captura de pantalla y un html sin estilo,
+generamos un CSS que intente replicar lo mejor posible el resultado de la captura.
+
+Este es mi resultado de horas largas rebuscando los detalles para acercarme lo mejor
+que he podido al resultado original.
+
+No es perfecta, pero no esta tan lejos de estarlo.
+
+---
+
+ENG: About the exercise: Using a screenshot and an unstyled html, we generate a CSS
+that tries to replicate as best as possible the result of the screenshot.
+
+This is my result of long hours of digging into the details to get as close as
+possible to the original result.
+
+It's not perfect, but it's not far from it.
+
+*/
+
+
+/* SPA: La cabecera en el azul que nos piden de fondo, relleno (padding) para dejar un marco. */
+/* ENG: The header in the blue background, padding to leave a frame. */
+
+body>header {
+    background-color: #046DD5;
+    color: white;
+    padding: 1em;
+}
+
+/* SPA: Nos cargamos un checkbox que aparece en el html y hay que ocultar. */
+/* ENG: Hide a checkbox that appears in the html and must be hidden. */
+
+input[type="checkbox"]:enabled {
+    display: none;
+}
+
+/* SPA: Cambio de letra a tipo 'Lora' para los parrafos <p> */
+/* ENG: change font to 'Lora' for paragraphs <p>. */
+
+p {
+    font-family: 'Lora';
+}
+
+/* SPA: Menu de navegación, nos cargamos los puntitos del <li>, centramos y agregamos
+un padding (relleno). */
+/* ENG: Navigation menu, we load the <li> dots, centre them and add a padding. */
+
+li {
+    font-family: 'Poppins';
+    background-color: white;
+    text-align: center;
+    list-style-type: none;
+    padding: 1em
+}
+
+/* SPA: Nos cargamos margenes y relleno de la lista <ul>. */
+/* ENG: We remove margins and padding from the <ul> list. */
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* SPA: Enlaces de navegacion sin linea de enlace y negros. Agrego bold para grosor de letra. */
+/* ENG: Navigation links without link line and black. I add bold for font thickness. */
+
+li a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+/* SPA: Fondo de los <li> de la lista de navegacion en negro #2A2F33 color especial
+cuando nos ponemos por encima (hover) con el raton. */
+/* ENG: background of the <li> navigation list in black #2A2F33 special colour
+when hovering over with the mouse. */
+
+li:hover {
+    background-color: #2A2F33;
+}
+
+li:hover a {
+    color: white;
+}
+
+/* SPA: Margenes de <h1> y <h2> del <header>, para que esten más juntos y tamaños. */
+/* ENG: Margins of <h1> and <h2> of the <header>, to make them closer together and sizes. */
+
+body>header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+body>header h2 {
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: lighter;
+    font-size: 1.5em;
+}
+
+/* SPA: Espacio en el <div> de register, Login por arriba (top) y abajo (bottom). */
+/* ENG: Space in the <div> of register, Login at the top and bottom. */
+
+body>header div {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+/* SPA: Quitamos la linea de enlace de la cabecera y coloreamos de blanco. */
+/* ENG: We remove the link line from the header and colour it white. */
+
+body>header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* SPA: Filigrana separador entre register y login con remarcado o color blanco. */
+/* ENG: Watermark separator between register and login with highlighting or white colour. */
+
+body>header #signup a:first-child {
+    border-right: 0.1em solid white;
+}
+
+/* SPA: Hace un relleno/cajitas negras del tamaño de la letra, con el (0) a register y login. */
+/* ENG: Makes a black filler/boxes the size of the letter, with the (0) to register and login. */
+
+body>header #signup a {
+    font-family: 'Poppins';
+    padding: 0 2em;
+}
+
+/* SPA: Alinea register a la izquierda, quedando en linea con las otras dos cabeceras. */
+/* ENG: Align register to the left, in line with the other two headers. */
+
+body>header #signup a:first-child {
+    padding-left: 0;
+}
+
+/* SPA: Lineas de colores del menu navegación #E1493E (rojo), #8ABA56 (verde),
+#5B4282 (morado), #FF8932 (naranja),#19B6E9 (azul) and #E84C8B (rosa). */
+/* ENG: Navigation menu colour lines #E1493E (red), #8ABA56 (green),
+#5B4282 (purple), #FF8932 (orange),#19B6E9 (blue) and #E84C8B (pink). */
+
+li:nth-child(1) {
+    border-top: 0.3em solid #E1493E;
+}
+
+li:nth-child(2) {
+    border-top: 0.3em solid #8ABA56;
+}
+
+li:nth-child(3) {
+    border-top: 0.3em solid #5B4282;
+}
+
+li:nth-child(4) {
+    border-top: 0.3em solid #FF8932;
+}
+
+li:nth-child(5) {
+    border-top: 0.3em solid #19B6E9;
+}
+
+li:nth-child(6) {
+    border-top: 0.3em solid #E84C8B;
+}
+
+/* SPA: id="related" con fondo negro #2A2F33 con texto h1, a (enlaces) y
+p (parrafos) blancos. Decoration es la linea de los enlaces. Relleno 1em para
+tener un marco. */
+/* ENG: id="related" with black background #2A2F33 with white <h1>, <a> (links)
+and <p> (paragraphs) text. <p> (paragraphs) white. Decoration is the line of the
+links. I fill 1em to have a frame. */
+
+#related {
+    background-color: #2A2F33;
+    padding: 1em;
+}
+
+#related h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+#related p {
+    color: white;
+}
+
+/* SPA: Titulares en tipo de letra 'Poppins'. */
+/* ENG: Headlines in 'Poppins' typeface. */
+
+h1 a {
+    font-family: 'Poppins';
+    font-size: 1em;
+}
+
+/* SPA: Titulares en blanco sin linea de los enlaces (decoration: none) 
+por que son enlaces por eso hace falta esto, si no quedan azul link. 
+tamaño de titulares intentando replicar la escala de la captura. */
+/* ENG: Blank headlines without link line (decoration: none) 
+because they are links that's why this is needed, otherwise they remain blue link. 
+size of headlines trying to replicate the scale of the screenshot. */
+
+#news header a {
+    font-size: 1.4em;
+    color: white;
+    text-decoration: none;
+}
+
+/* SPA: Sombra de los titulares, margen a 0 para que no haya espacio
+entre foto y titular. */
+/* ENG: Shadow of the headlines, margin at 0 so that there is no space between
+photo and headline. */
+
+#news header h1 {
+    text-shadow: 0.5em 0.5em 0.5em black;
+    margin: 0;
+}
+
+/* SPA: Asi nos pone la primera letra MAYUSCULA de TODOS los <p> (parrafos). */
+/* ENG: This way we get the first CAPITAL letter of ALL <p> (paragraphs). */
+
+/* codigo descartado - discarded code */ 
+
+/*
+article > p:first-of-type:first-letter {
+    font-size: 2em;
+}
+*/
+
+/* SPA: Primera letra de los articulos con tamaño 2em (3em es demasiado grande y 1em es normal/nosenota). */
+/* ENG: First letter of articles with size 2em (3em is too big and 1em is normal/"no effect"). */
+
+#news>article>p:first-of-type:first-letter {
+    font-size: 2em;
+}
+
+/* SPA: Imagenes al 100% para que esten en el ancho completo del navegador. */
+/* ENG: Images at 100% so that they are in the full width of the browser. */
+
+#news img {
+    width: 100%;
+}
+
+/* SPA: Pie de articulo (footer) letras blancas y fondo rojo de los main colors
+#2A2F33 (negro background), #046DD5 (azul cabecera) and #F4655F (rojo footer)
+relleno (padding) 1em. */
+/* ENG: Footer white letters and red background of the main colours
+#2A2F33 (black background), #046DD5 (blue header) and #F4655F (red footer)
+padding 1em. */
+
+footer {
+    color: white;
+    background-color: #F4655F;
+    padding: 1em;
+}
+
+/* SPA: Linea links del footer 0.1em (1px) y texto del enlace en blanco. */
+/* ENG: Footer links line 0.1em (1px) and link text blank. */
+
+footer a {
+    color: white;
+    text-decoration: none;
+    border-bottom: 0.1em solid white;
+}
+
+/* SPA: Filigrana "By " para el autor del articulo en el footer del articulo. */
+/* ENG: Watermark "By " for the author of the article in the footer of the article. */
+
+footer .author:before {
+    font-family: 'Poppins';
+    font-size: 1em;
+    content: "By ";
+}
+
+/* SPA: Filigrana comments para que salga despues del numero en el footer de los articulos. */
+/* ENG: Watermark comments to appear after the number in the footer of the articles. */
+
+footer .comments:after {
+    content: ' comments';
+}
+
+/* SPA: Tabulacion izquierda de texto para comentarios en el footer. */
+/* ENG: Left text tab for comments in the footer. */
+
+footer .comments {
+    font-family: 'Poppins';
+    margin-left: 2em;
+}
+
+/* SPA: Tabulacion derecha de texto para despues de los hashtags en el footer. */
+/* ENG: Right tab text for after the hashtags in the footer. */
+
+footer .tags {
+    font-family: 'Poppins';
+    margin-right: 2em;
+}
+
+/* SPA: Cambio de tipo de letra para el footer (autor + date) del pie de articulo. */
+/* ENG: Change of font for the footer (author + date) of the article footer. */
+
+footer .date, .author {
+    font-family: 'Poppins';
+}
+
+/* SPA: Ultimo footer de la pagina en negro especial #2A2F33 y letra blanca. */
+/* ENG: Last footer of the page in special black #2A2F33 and white font. */
+
+body > footer {
+    background-color: #2A2F33;
+}
+
+/* SPA: Margen 0 para el footer negro. */
+/* ENG: Margin 0 for the black footer. */
+
+body > footer p {
+    margin: 0;
+}
+
+/* SPA: Tipo de letra del ultimo footer estaba en 'Lora' y lo pasamos a 'Poppins'. */
+/* ENG: The font of the last footer was set to 'Lora' and we changed it to 'Poppins'. */
+
+footer p {
+    font-family: 'Poppins';
+}
