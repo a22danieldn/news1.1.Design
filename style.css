@@ -93,12 +93,15 @@ li:hover a {
     color: white;
 }
 
-/* SPA: Margenes de <h1> y <h2> del <header>, para que esten más juntos y tamaños. */
-/* ENG: Margins of <h1> and <h2> of the <header>, to make them closer together and sizes. */
+/* SPA: Margenes de <h1> y <h2> del <header>, para que esten más juntos y tamaños.
+En un ultimo retoque, jugué con ambos rellenos izquierdos para ajustar la separacion. */
+/* ENG: Margins of <h1> and <h2> of the <header>, to make them closer together and sizes.
+In a final touch, I played with both left padding to adjust the spacing. */
 
 body>header h1 {
     margin: 0;
     font-size: 2em;
+    padding-left: 0.4em;
 }
 
 body>header h2 {
@@ -106,6 +109,7 @@ body>header h2 {
     font-family: 'Poppins';
     font-weight: lighter;
     font-size: 1.5em;
+    padding-left: 0.5em;
 }
 
 /* SPA: Espacio en el <div> de register, Login por arriba (top) y abajo (bottom). */
@@ -114,6 +118,7 @@ body>header h2 {
 body>header div {
     margin-top: 2em;
     margin-bottom: 0.5em;
+    padding-left: 0.8em;
 }
 
 /* SPA: Quitamos la linea de enlace de la cabecera y coloreamos de blanco. */
@@ -177,10 +182,12 @@ li:nth-child(6) {
 
 /* SPA: id="related" con fondo negro #2A2F33 con texto h1, a (enlaces) y
 p (parrafos) blancos. Decoration es la linea de los enlaces. Relleno 1em para
-tener un marco. */
+tener un marco. Añadido margen para espaciar desde la izquierda tanto el
+titulo <h1> como el parrafo <p>. */
 /* ENG: id="related" with black background #2A2F33 with white <h1>, <a> (links)
 and <p> (paragraphs) text. <p> (paragraphs) white. Decoration is the line of the
-links. I fill 1em to have a frame. */
+links. I fill 1em to have a frame. Added margin spacing from the left for both
+the title <h1> and the paragraph <p>. */
 
 #related {
     background-color: #2A2F33;
@@ -190,10 +197,12 @@ links. I fill 1em to have a frame. */
 #related h1 a {
     color: white;
     text-decoration: none;
+    margin: 0.5em;
 }
 
 #related p {
     color: white;
+    margin: 0.5em;
 }
 
 /* SPA: Titulares en tipo de letra 'Poppins'. */
@@ -206,15 +215,19 @@ h1 a {
 
 /* SPA: Titulares en blanco sin linea de los enlaces (decoration: none) 
 por que son enlaces por eso hace falta esto, si no quedan azul link. 
-tamaño de titulares intentando replicar la escala de la captura. */
+tamaño de titulares intentando replicar la escala de la captura.
+Añadido relleno que de lo contrario nos queda el titulo pegado al borde. */
 /* ENG: Blank headlines without link line (decoration: none) 
 because they are links that's why this is needed, otherwise they remain blue link. 
-size of headlines trying to replicate the scale of the screenshot. */
+size of headlines trying to replicate the scale of the screenshot.
+Added padding, otherwise the title will be stuck to the edge.*/
 
 #news header a {
     font-size: 1.4em;
     color: white;
     text-decoration: none;
+    padding-left: 0.9em;
+
 }
 
 /* SPA: Sombra de los titulares, margen a 0 para que no haya espacio
@@ -227,10 +240,14 @@ photo and headline. */
     margin: 0;
 }
 
+#news article header h1 {
+    padding-top: 1em;
+}
+
 /* SPA: Asi nos pone la primera letra MAYUSCULA de TODOS los <p> (parrafos). */
 /* ENG: This way we get the first CAPITAL letter of ALL <p> (paragraphs). */
 
-/* codigo descartado - discarded code */ 
+/* codigo descartado - discarded code */
 
 /*
 article > p:first-of-type:first-letter {
@@ -243,6 +260,13 @@ article > p:first-of-type:first-letter {
 
 #news>article>p:first-of-type:first-letter {
     font-size: 2em;
+}
+
+/* SPA: Margen de los titulares de articulo que tienen una tabulación/margen a la izquierda. */
+/* ENG: Margin of article headlines that have a tab/margin on the left. */
+
+#news>article>p {
+    margin: 1.8em;
 }
 
 /* SPA: Imagenes al 100% para que esten en el ancho completo del navegador. */
@@ -309,21 +333,22 @@ footer .tags {
 /* SPA: Cambio de tipo de letra para el footer (autor + date) del pie de articulo. */
 /* ENG: Change of font for the footer (author + date) of the article footer. */
 
-footer .date, .author {
+footer .date,
+.author {
     font-family: 'Poppins';
 }
 
 /* SPA: Ultimo footer de la pagina en negro especial #2A2F33 y letra blanca. */
 /* ENG: Last footer of the page in special black #2A2F33 and white font. */
 
-body > footer {
+body>footer {
     background-color: #2A2F33;
 }
 
 /* SPA: Margen 0 para el footer negro. */
 /* ENG: Margin 0 for the black footer. */
 
-body > footer p {
+body>footer p {
     margin: 0;
 }
 
